@@ -1,0 +1,11 @@
+.toppingsbox {
+    float: left;
+}
+
+.selectedtoppings {
+    float: right;
+}
+
+.btn.submit {
+    margin-bottom: 2rem;
+}
