@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.5.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Mario's Pizza Parlor</title>
+</head>
+
+<body>
+    <div class="jumbotron header">
+        <div class="container">
+            <h1>Mario's Pizza Parlor</h1>
+            <h3>It'sa me, Mario. Build your dream pizza. Pile it high with cheese, stack on the meats, add some crunchy
+                veggies.</h3>
+        </div>
+    </div>
+    <div class="container">
+        <div class="col-sm-6 toppingsbox text-center">
+            <form id="toppings-list">
+                <h4>Non-Meats</h4>
+                <div class="row">
+                    <div class="col-md-6">
+                        <input type="checkbox" id="extracheese" class="toppingOption" value=" Extra Cheese">
+                        <label for="extracheese">Extra Cheese</label>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="checkbox" class="toppingOption" id="onions" value=" Onions">
+                        <label for="onions">Onions</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <input type="checkbox" id="greenpeppers" class="toppingOption" value=" Green Peppers ">
+                        <label for="greenpeppers">Green Peppers</label>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="checkbox" id="redpeppers" class="toppingOption" value=" Roasted Red Peppers ">
+                        <label for="redpeppers">Roasted Red Peppers</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <input type="checkbox" id="pineapple" class="toppingOption" value="  Pineapple ">
+                        <label for="pineapple">Pineapple</label>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="checkbox" id="jalapenos" class="toppingOption" value=" Jalapenos ">
+                        <label for="jalapenos">Jalapenos</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <input type="checkbox" id="tomatoes" class="toppingOption" value=" Tomatoes ">
+                        <label for="tomatoes">Tomatoes</label>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="checkbox" id="olives" class="toppingOption" value=" Olives ">
+                        <label for="olives">Olives</label>
+                    </div>
+                </div>
+                <hr>
+                <h4>Meats</h4>
+                <input type="checkbox" id="pepperoni" class="toppingOption" value=" Pepperoni ">
+                <label for="pepperon">Pepperoni</label>
+
+                <input type="checkbox" id="sausage" class="toppingOption" value=" Sausage ">
+                <label for="sausage">Sausage</label>
+
+                <input type="checkbox" id="bacon" class="toppingOption" value=" Bacon ">
+                <label for="bacon">Bacon</label>
+
+                <input type="checkbox" id="ham" class="toppingOption" value=" Ham ">
+                <label for="ham">Ham</label>
+            </form>
+            <hr>
+            <label for="pizzaSize">Choose your size:</label>
+            <select class="pizzaSize">
+                <option value="Small">Small</option>
+                <option value="Medium">Medium</option>
+                <option value="Large">Large</option>
+            </select>
+            <hr>
+            <button type="button" name="button" class="btn btn-primary btn-lg submit">Build my Pizza!</button>
+        </div>
+        <div class="selectedtoppings col-sm-6 pull-right">
+            <h5>Total:<span class="totalSum"></span></h5>
+        </div>
+        <div class="">
+
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
