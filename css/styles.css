@@ -6,6 +6,11 @@
     float: right;
 }
 
+.pizzaInfo {
+    display: block;
+    margin-bottom: 15px;
+}
+
 .btn.submit {
     margin-bottom: 2rem;
 }
