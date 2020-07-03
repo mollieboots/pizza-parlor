@@ -24,8 +24,6 @@ Pizza.prototype.sumCalculator = function (price, totalSum) {
 };
 
 // user interface logic
-let order = new Order();
-
 let grabSelectedToppings = function () {
     let toppings = [];
     $('#toppings-list :checked').each(function () {
@@ -46,9 +44,12 @@ $(document).ready(function () {
         newPizza.price = price;
         totalSum += parseInt(price);
         console.log(newPizza);
-        
 
-        $(".selectedtoppings").show().prepend("<span class='pizzaInfo'><h5>" + toppings + "</h5>" + pizzaSize + "<br>" + "$" + price);
+        if (toppings.length === 0) {
+            $(".selectedtoppings").show().prepend("<span class='pizzaInfo'><h5>Just Cheese, Please!</h5>" + pizzaSize + "<br>" + "Total: $" + price);
+        } else {
+            $(".selectedtoppings").show().prepend("<span class='pizzaInfo'><h5>" + toppings + "</h5>" + pizzaSize + "<br>" + "$" + price);
+        }
 
         $("input.toppingOption").prop("checked", false);
 
